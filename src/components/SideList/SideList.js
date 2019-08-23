@@ -6,7 +6,7 @@ import ListItemLink from '../ListItemLink/ListItemLink';
 
 type Props = {
   closeMenu: any,
-  menuItems: Array<any>,
+  menuItems: string[],
 };
 
 const SideList = ({ closeMenu, menuItems }: Props) => (

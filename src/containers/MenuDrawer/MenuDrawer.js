@@ -6,7 +6,7 @@ import { SideList } from '../../components';
 type Props = {
   open: boolean,
   toggleDrawer: any,
-  menuItems: Array<any>,
+  menuItems: string[],
 };
 
 const MenuDrawer = ({ open, toggleDrawer, menuItems }: Props) => {
