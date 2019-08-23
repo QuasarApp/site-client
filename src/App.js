@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App" />
-  );
-}
+import { Header } from './containers';
+
+const App = () => (
+  <div className="App">
+    <Header />
+  </div>
+);
 
 export default App;

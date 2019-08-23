@@ -21,7 +21,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css,scss,md}": [
+    "src/**/*.{js,jsx,json}": [
       "eslint --fix",
       "git add"
     ]
@@ -50,8 +50,12 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-flowtype": "^4.2.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "flow-bin": "^0.105.2",
+    "flow-typed": "^2.6.1"
   }
 }

@@ -2,9 +2,14 @@ module.exports = {
 	"env": {
 		"browser": true,
 		"es6": true,
-		"node": true
+		"node": true,
+		"jest": true
 	},
-	"extends": "airbnb",
+	"extends": [
+		"airbnb",
+		"plugin:jest/recommended",
+		"plugin:flowtype/recommended"
+	],
 	"globals": {
 		"Atomics": "readonly",
 		"SharedArrayBuffer": "readonly"
@@ -17,9 +22,18 @@ module.exports = {
 		"sourceType": "module"
 	},
 	"plugins": [
-		"react"
+		"react",
+		"jest",
+		"flowtype"
 	],
+	"settings": {
+		"flowtype": {
+			"onlyFilesWithFlowAnnotation": true
+		}
+	},
 	"rules": {
-		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+		"react/jsx-filename-extension": [1, {
+			"extensions": [".js", ".jsx"]
+		}]
 	}
 };
