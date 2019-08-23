@@ -21,12 +21,12 @@ const Header = () => {
 
   return (
     <header>
+      <MenuDrawer open={open} toggleDrawer={toggleDrawer} menuItems={menuItems} />
       <div className="container">
         <IconButton onClick={toggleDrawer(true)}>
           <MenuIcon />
         </IconButton>
         <MenuBar menuItems={menuItems} />
-        <MenuDrawer open={open} toggleDrawer={toggleDrawer} menuItems={menuItems} />
       </div>
     </header>
   );

@@ -3,13 +3,13 @@ import React, { memo } from 'react';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import { SideList } from '../../components';
 
-type Props = {
+type MenuDrawerProps = {
   open: boolean,
   toggleDrawer: any,
   menuItems: string[],
 };
 
-const MenuDrawer = ({ open, toggleDrawer, menuItems }: Props) => {
+const MenuDrawer = ({ open, toggleDrawer, menuItems }: MenuDrawerProps) => {
   const isBrowser = typeof window !== 'undefined';
   const iOS = isBrowser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
@@ -26,4 +26,4 @@ const MenuDrawer = ({ open, toggleDrawer, menuItems }: Props) => {
   );
 };
 
-export default memo<Props>(MenuDrawer);
+export default memo<MenuDrawerProps>(MenuDrawer);

@@ -4,12 +4,12 @@ import './SideList.css';
 import List from '@material-ui/core/List';
 import ListItemLink from '../ListItemLink/ListItemLink';
 
-type Props = {
+type SideListProps = {
   closeMenu: any,
   menuItems: string[],
 };
 
-const SideList = ({ closeMenu, menuItems }: Props) => (
+const SideList = ({ closeMenu, menuItems }: SideListProps) => (
   <div
     className="side-list"
     role="presentation"
@@ -26,4 +26,4 @@ const SideList = ({ closeMenu, menuItems }: Props) => (
   </div>
 );
 
-export default memo<Props>(SideList);
+export default memo<SideListProps>(SideList);
