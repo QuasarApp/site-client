@@ -4,5 +4,8 @@ import MenuBar from './MenuBar/MenuBar';
 import MenuItem from './MenuBarItem/MenuBarItem';
 
 export {
-  SideList, ListItemLink, MenuBar, MenuItem
+  SideList,
+  ListItemLink,
+  MenuBar,
+  MenuItem
 };

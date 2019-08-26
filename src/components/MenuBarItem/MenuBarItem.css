@@ -1,0 +1,9 @@
+.menu-bar__item a {
+  text-transform: none;
+  text-decoration: none;
+  color: var(--primaryTextColor);
+}
+
+.active-menu-item a {
+  color: var(--darkGrey);
+}

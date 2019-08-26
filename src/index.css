@@ -1,6 +1,19 @@
 /* variables */
 :root {
-  
+  --primaryColor: #424242;
+  --primaryLightColor: #6d6d6d;
+  --primaryDarkColor: #1b1b1b;
+
+  --secondaryColor: #00acc1;
+  --secondaryLightColor: #5ddef4;
+  --secondaryDarkColor: #007c91;
+
+  --darkGrey: #bababa;
+  --grey: #e1e1e1;
+  --lightGrey: #f5f5f5;
+
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
 }
 
 body {

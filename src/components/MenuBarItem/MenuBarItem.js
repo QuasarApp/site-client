@@ -1,12 +1,28 @@
 // @flow
 import React, { memo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import './MenuBarItem.css';
 
 type MenuBarItemProps = {
-  text: string
+  text: string,
+  location: any,
 }
 
-const MenuBarItem = ({ text }: MenuBarItemProps) => <Button><Link to={`/${text}`}>{text}</Link></Button>;
+const ITEM_CLASS_NAME = 'menu-bar__item';
+const ITEM_ACTIVE_CLASS_NAME = 'active-menu-item';
 
-export default memo<MenuBarItemProps>(MenuBarItem);
+const MenuBarItem = ({ text, location }: MenuBarItemProps) => {
+  const className = [ITEM_CLASS_NAME, 'custom-button'];
+
+  const { pathname } = location;
+  const isActive = (pathname.includes(text));
+
+  if (isActive) {
+    className.push(ITEM_ACTIVE_CLASS_NAME);
+  }
+
+  return <Button color="primary" className={className}><Link to={`${text}`}>{text}</Link></Button>;
+};
+
+export default withRouter(memo<MenuBarItemProps>(MenuBarItem));

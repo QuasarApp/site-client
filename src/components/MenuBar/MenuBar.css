@@ -1,0 +1,6 @@
+.menu-bar {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  margin: 0 1em;
+}

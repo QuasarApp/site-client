@@ -1,0 +1,14 @@
+header {
+  background-color: var(--primaryColor);
+  padding: 0.2em;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .menu-burger {
+  color: var(--primaryTextColor);
+}

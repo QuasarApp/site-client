@@ -6,10 +6,15 @@
 
 main {
   flex: 1;
+  background-color: var(--gray);
 }
 
 .container {
   max-width: 1200px;
   padding: 0 1em;
   margin: 0 auto;
+}
+
+.App .custom-button:hover {
+  background-color: #00000030;
 }

@@ -1,6 +1,7 @@
 // @flow
 import React, { memo } from 'react';
 import MenuBarItem from '../MenuBarItem/MenuBarItem';
+import './MenuBar.css';
 
 type MenuBarProps = {
   menuItems: string[],
