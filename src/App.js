@@ -2,14 +2,15 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 
-import { Header, HomeScreen } from './containers';
+import { Header, HomeScreen, ProjectScreen } from './containers';
 
 const App = () => (
   <div className="App">
     <Header />
-    <main>
+    <main className="wrap">
       <Switch>
-        <Route path="/Home" component={HomeScreen} />
+        <Route exact path="/Home" component={HomeScreen} />
+        <Route path="/:projectName" component={ProjectScreen} />
         <Redirect to="/Home" />
       </Switch>
     </main>

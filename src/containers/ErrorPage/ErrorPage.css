@@ -1,0 +1,11 @@
+.error-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1;
+  text-align: center;
+}
+
+.error-container {
+  padding: 2em 0;
+}

@@ -22,7 +22,7 @@ const MenuBarItem = ({ text, location }: MenuBarItemProps) => {
     className.push(ITEM_ACTIVE_CLASS_NAME);
   }
 
-  return <Button color="primary" className={className}><Link to={`${text}`}>{text}</Link></Button>;
+  return <Button color="primary" className={className.join(' ')}><Link to={`/${text}`}>{text}</Link></Button>;
 };
 
 export default withRouter(memo<MenuBarItemProps>(MenuBarItem));

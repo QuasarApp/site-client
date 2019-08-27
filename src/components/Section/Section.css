@@ -1,0 +1,15 @@
+.section {
+  background-color: var(--lightGrey);
+  padding: 0.5em 0.75em;
+  width: 100%;
+}
+
+.section__title {
+  color: var(--secondaryTextColor);
+  margin: 0;
+}
+
+.section__text {
+  color: var(--primaryLightColor);
+  margin: 0;
+}

@@ -6,12 +6,17 @@
 
 main {
   flex: 1;
-  background-color: var(--gray);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column
+}
+
+.wrap {
+  padding: 0.2em;
 }
 
 .container {
   max-width: 1200px;
-  padding: 0 1em;
   margin: 0 auto;
 }
 

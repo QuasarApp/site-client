@@ -1,6 +1,5 @@
 header {
   background-color: var(--primaryColor);
-  padding: 0.2em;
 }
 
 header .container {
@@ -10,5 +9,12 @@ header .container {
 }
 
 header .menu-burger {
+  display: none;
   color: var(--primaryTextColor);
+}
+
+@media screen and (max-width: 600px) {		
+  header .menu-burger {
+    display: inline-flex;
+  }
 }

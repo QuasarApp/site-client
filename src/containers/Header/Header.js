@@ -9,7 +9,7 @@ import { MenuBar } from '../../components';
 import './Header.css';
 
 const Header = () => {
-  const menuItems = ['Home', 'Snake', 'QtDeployer', 'Honoe-Towers'];
+  const menuItems = ['Home', 'Snake', 'CQtDeployer', 'HonoeTowers'];
 
   const [open, setOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="wrap">
       <MenuDrawer open={open} toggleDrawer={toggleDrawer} menuItems={menuItems} />
       <div className="container">
         <IconButton className="menu-burger custom-button" color="primary" onClick={toggleDrawer(true)}>
