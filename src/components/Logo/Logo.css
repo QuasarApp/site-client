@@ -1,0 +1,23 @@
+.logo {
+  height: 1.5em;
+  width: 1.5em;
+  fill: var(--primaryTextColor);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.logo:hover {
+  fill: var(--darkGrey);
+}
+
+
+@media screen and (max-width: 1200px) {		
+  .logo  {
+    padding-left: 0.75em;
+  }
+}
+
+@media screen and (max-width: 600px) {		
+  .logo  {
+    padding: 0 1.5em 0 0;
+  }
+}

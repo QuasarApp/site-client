@@ -3,6 +3,7 @@ import React from 'react';
 
 import SectionText from './SectionText';
 import SectionTitle from './SectionTitle';
+import SectionDivider from './SectionDivider';
 
 import './Section.css';
 
@@ -14,5 +15,6 @@ const Section = ({ children }: SectionProps) => <section className="section"><di
 
 Section.text = SectionText;
 Section.title = SectionTitle;
+Section.divider = SectionDivider;
 
 export default Section;

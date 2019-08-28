@@ -2,11 +2,11 @@
 import React, { memo } from 'react';
 
 type SectionTitleProps = {
-  rank: number,
+  rank: string,
   children: any
 }
 
-const SectionTitle = ({ rank, children }: SectionTitleProps) => {
+const SectionTitle = ({ rank = '1', children }: SectionTitleProps) => {
   const Element = `h${rank}`;
   return <Element className="section__title">{children}</Element>;
 };

@@ -17,7 +17,7 @@ const MenuDrawer = ({ open, toggleDrawer, menuItems }: MenuDrawerProps) => {
     <SwipeableDrawer
       disableBackdropTransition={!iOS}
       disableDiscovery={iOS}
-      disableSwipeToOpen="false"
+      disableSwipeToOpen
       open={open}
       onClose={toggleDrawer(false)}
       onOpen={toggleDrawer(true)}

@@ -9,7 +9,7 @@ import { MenuBar } from '../../components';
 import './Header.css';
 
 const Header = () => {
-  const menuItems = ['Home', 'Snake', 'CQtDeployer', 'HonoeTowers'];
+  const menuItems = ['QtBigInt', 'QtSecret', 'QtDeployer', 'Snake', 'CQtDeployer', 'HonoeTowers'];
 
   const [open, setOpen] = useState(false);
 
